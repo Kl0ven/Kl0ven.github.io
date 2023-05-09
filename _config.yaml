@@ -1,0 +1,48 @@
+title: Kloven's Blog
+url: https://blog.kloven.fr
+author: Kl0ven
+
+description: > # this means to ignore newlines until "show_exerpts:"
+  Hi, I'm a software engineer based in France.
+  </br>I like to talk about DevOps, Kubernetes and python.
+show_excerpts: false # set to true to show excerpts on the homepage
+
+
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
+
+  disqus:
+    shortname: https-blog-kloven-fr
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://kloven.fr
+      icon: globe
+      color: green
+      fa: true
+    - url: https://github.com/Kl0ven
+      icon: github-square
+      color: yellow
+
+  avatar_source: github
+  github_username: Kl0ven
+  show_author: true
+
+# Build settings
+theme: jekyll-dash
+
+plugins:
+  - liquid-md5
+  - jekyll/tagging
+  - jekyll-paginate
