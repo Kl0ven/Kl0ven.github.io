@@ -2,6 +2,21 @@ title: Kloven's Blog
 url: https://blog.kloven.fr
 author: Kl0ven
 
+
+# Build settings
+theme: jekyll-dash
+
+plugins:
+  - liquid-md5
+  - jekyll/tagging
+  - jekyll-paginate
+  - premonition
+
+exclude:
+  - commitlint.config.js
+  - LICENSE
+  - README.md
+
 description: > # this means to ignore newlines until "show_exerpts:"
   Hi, I'm a software engineer based in France.
   </br>I like to talk about DevOps, Kubernetes and python.
@@ -39,10 +54,6 @@ dash:
   github_username: Kl0ven
   show_author: true
 
-# Build settings
-theme: jekyll-dash
-
-plugins:
-  - liquid-md5
-  - jekyll/tagging
-  - jekyll-paginate
+sass:
+  sass_dir: _sass
+  style: compressed

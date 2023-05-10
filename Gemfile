@@ -9,3 +9,4 @@ gem 'liquid-md5'
 gem 'jekyll-tagging'
 gem 'jekyll-paginate'
 gem "jekyll-sass-converter", "~> 2.0"
+gem "premonition", group: :jekyll_plugins
